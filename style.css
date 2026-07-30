@@ -1,0 +1,59 @@
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 75px;
+}
+
+.inicio {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+    }
+    a{
+    
+        color:black;
+        margin-inline: 10px;
+    }
+    span{
+        font-size: 17px;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 3px;
+    }
+
+    .guante1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: none;
+    cursor: pointer;
+    margin-left: 50px;
+    padding: none;
+}
+.guante1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px gray;
+}
+
+
+
+
+.imagenmckh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+}
+
+/* Celular*/
+@media (max-width: 768px){
+    .guante1{
+        justify-content: center;
+        margin-left: 75px;
+    }
+}

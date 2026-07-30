@@ -56,4 +56,7 @@
         justify-content: center;
         margin-left: 75px;
     }
+    button{
+        color: black;
+        border: 2px solid black;
 }

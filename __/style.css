@@ -32,13 +32,14 @@
     background: none;
     cursor: pointer;
     margin-left: 50px;
-    color: black;
-    border: 2px solid black;
-    margin-top: 20px;
-}
-.guante1:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px gray;
+    opacity: 0;
+    transform: translateY(80px) scale(.95);
+    transition: all .8s cubic-bezier(.22,1,.36,1);
+    width: 300px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
 }
 
 a.imagenes{
@@ -104,14 +105,22 @@ p{
 }
 
 
+.guante1.mostrar{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.guante1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0,0,0,.15);
+}
+
 /* Celular*/
 @media (max-width: 768px){
     .guante1{
         justify-content: center;
-        margin-left: 95px;
+        margin-left: 55px;
         margin-top: 20px;
-        color: black;
-        border: 2px solid black;
     }
     
     p{

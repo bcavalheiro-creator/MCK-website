@@ -23,6 +23,7 @@
         font-size: 17px;
         font-family: 'Courier New', Courier, monospace;
         padding: 3px;
+        color: black;
     }
 
     .guante1 {
@@ -119,12 +120,15 @@ p{
 @media (max-width: 768px){
     .guante1{
         justify-content: center;
-        margin-left: 55px;
+        margin-left: 50px;
         margin-top: 20px;
     }
     
     p{
         font-size: 30px;
 
+    }
+    span{
+        color: black;
     }
 }

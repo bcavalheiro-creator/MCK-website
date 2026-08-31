@@ -141,7 +141,7 @@ a{
     border-color: black;
 }
 .btnWhatsapp{
- margin-left: 5px;   
+ margin-left: 0px;   
  background: none;
  padding: 0px;
  border: white;
@@ -231,6 +231,9 @@ a{
         width: 40px;
 
     }
+    button{
+        color: black;
+    }
         
     a{
         margin-top: 5px;
@@ -240,8 +243,5 @@ a{
     .contacto1{
         margin-right: 105px;
     }
-    button{
-        color: black;
-        
 
 }

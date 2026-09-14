@@ -11,3 +11,17 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 elementos.forEach(el => observer.observe(el));
+
+
+const header = document.querySelector("header");
+const alturaHeader = header.offsetHeight;
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > alturaHeader) {
+        header.classList.add("fijo");
+    } else {
+        header.classList.remove("fijo");
+    }
+
+});

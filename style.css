@@ -16,7 +16,7 @@
     }
     a{
     
-        color:black;
+        color: black;
         margin-inline: 10px;
     }
     span{
@@ -82,13 +82,39 @@ body{
     padding: 0px;
 }
 
-header{
+header {
+    will-change: transform;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     background: white;
-    margin-bottom: 0px;
+    margin-bottom: 0;
+
+    position: relative;
+    z-index: 100;
+
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+header.fijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    animation: aparecerHeader 0.35s cubic-bezier(.22, 1, .36, 1);
+}
+
+@keyframes aparecerHeader {
+    from {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 p{

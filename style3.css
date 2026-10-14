@@ -160,17 +160,47 @@ a{
  cursor: pointer;
 }
 
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.miniaturas {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.miniaturas button {
+    background: transparent;
+    border: 2px white;
+    border-radius: 8px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.miniaturas img {
+    display: block;
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.miniaturas button:hover {
+    border-color: black;
+}
 @media (max-width: 768px){
     .imagenmckh{
-        margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    box-sizing: border-box;
     margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 175px;
+        margin-top: 40px;
     }
+
     .hadesimg{   
     display: flex;
     flex-direction: column;
@@ -178,33 +208,27 @@ a{
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+    height: 350px;
+    width: 250px;
+    margin-left: 60px;
     }
     span{
         font-size: 18px;
-        margin-right: 32px;
     }
     ul{
         font-size: 17px;
-        margin: 0px;
-        margin-right: 120px;
-        margin-left: 15px;
+       
         padding: 5px;
-        margin-bottom: 5px;
+       
     }
     p{
         font-size: 30px;
-        margin-left: 60px;
-        margin-right: 90px;
-        margin-bottom: 7px;
-
 
     }
     .textinfo{
-        margin-left: 20px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin-right: 0px;
     }
     
     .titulo1{
@@ -212,14 +236,14 @@ a{
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        margin-top: 5px;
+        margin-left: 400px;
     }
 
     .contacto1{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 100px;
+        margin-right: 130px;
         margin-top: 5px
     }
     
@@ -232,9 +256,10 @@ a{
         width: 30px;
         height: 20px;
         gap: 7px;
-        font-size: 15px;
+        font-size: 12px;
         margin-left: 10px;
         margin-right: 10px;
+        border: 1.5px solid black;
     }
     .tallaagotada{
         width: 40px;
@@ -269,8 +294,4 @@ a{
         height: 40px;
         width: 40px;
     }
-    .contacto1{
-        margin-right: 105px;
-    }
-
 }

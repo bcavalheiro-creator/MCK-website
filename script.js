@@ -46,3 +46,12 @@ Talla: ${tallaSeleccionada}
 
 });
 
+function cambiarImagen(ruta, ancho, alto, izquierda = 0, derecha = 0) {
+    const imagen = document.getElementById("imagenPrincipal");
+
+    imagen.src = ruta;
+    imagen.style.width = ancho + "px";
+    imagen.style.height = alto + "px";
+    imagen.style.marginLeft = izquierda + "px";
+    imagen.style.marginRight = derecha + "px";
+     }

@@ -130,6 +130,20 @@ a{
     transition: 0.2s;
      margin: 0px;
 }
+
+.tallaagotada{
+    cursor: not-allowed;
+    text-decoration: line-through;
+    background: white;
+    width: 60px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 999px;
+     font-size: 18px;
+    transition: 0.2s;
+     margin: 0px;
+
+}
 .talla:hover{
      transform: scale(1.05);
     box-shadow: 0 0 20px gray;
@@ -219,6 +233,19 @@ a{
         font-size: 15px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .tallaagotada{
+        width: 40px;
+        height: 30px;
+        gap: 10px;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        cursor: not-allowed;
+        text-decoration: line-through;
+        background: white;
+        color: gray;
+
     }
     .tallas{
         margin-bottom: 5px;

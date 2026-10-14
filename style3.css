@@ -35,7 +35,6 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
     padding-bottom: 0;
-    margin: 0;
 
 }
 
@@ -60,7 +59,7 @@ p{
      font-size: 70px;
     padding-bottom: 0;
     margin: 0;
-    margin-left: 40px;
+    margin-left: 80px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -163,18 +162,22 @@ a{
 
 @media (max-width: 768px){
     .imagenmckh{
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-left: 175px;
-        margin-top: 40px;
+        margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     }
-    .hadesimg{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+    .hadesimg{   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
     }
     span{
         font-size: 18px;
